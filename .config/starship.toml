@@ -10,7 +10,7 @@ $all[╰─](238)$character"""
 # Change the default prompt characters
 [character]
 success_symbol = "[](238)"
-error_symbol = "[](238)"
+error_symbol = "[✗](238)"
 
 # ---
 
@@ -22,7 +22,7 @@ disabled = false
 
 # Shows the current username
 [env_var.USER]
-format = '[$env_value](bold white) '
+format = '[$env_value]($style) '
 variable = "USER"
 disabled = false
 
@@ -38,6 +38,7 @@ disabled = false
 [hostname]
 ssh_only = false
 format = "[$hostname](bold yellow) "
+trim_at = "."
 disabled = false
 
 [directory]
@@ -47,6 +48,7 @@ home_symbol = " ~"
 read_only_style = "197"
 read_only = "  "
 format = "at [$path]($style)[$read_only]($read_only_style) "
+style = "bold italic blue"
 
 [git_branch]
 symbol = " "
