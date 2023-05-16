@@ -1,36 +1,39 @@
-[user]
-	name = Beto Mossmann
-	email = gilbertomossmann@gmail.com
 [core]
 	editor = code --wait
 [push]
 	default = current
+[pull]
+  ff = only
 [color]
-	ui = auto
+  ui = true
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+  oldMoved = blue bold
+  newMoved = blue bold
+  oldMovedAlternative = cyan bold
+  newMovedAlternative = cyan bold
 [color "status"]
 	added = cyan
 	changed = yellow
 	untracked = red
-[color "branch"]
-	current = yellow reverse
-	local = yellow
-	remote = green
-[color "diff"]
-	meta = yellow bold
-	frag = magenta bold
-	old = red
-	new = green
 [alias]
+  f = fetch -p
+  r = rebase
+  ri = rebase -i
 	b = branch
 	co = checkout
-	cn = checkout master
 	cb = checkout -b
 	c = !git add --all && git commit -m
 	s = !git status -sb
-	l = !git log --pretty=format:'%C(blue)%h%C(yellow)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'
+	l = !git log --pretty=format:'%C(blue)%h%C(yellow)%d %C(white)%s - %C(cyan)[ %cn ], %C(green)%cr'
 	amend = !git add --all && git commit --amend --no-edit
 	count = !git shortlog -s --grep
-	branches = branch --all
-	remotes = remote --verbose
 [init]
 	defaultBranch = main

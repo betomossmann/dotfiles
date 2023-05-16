@@ -1,27 +1,29 @@
 {
+  // VSCODE
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
   // EDITOR
-  "editor.cursorBlinking": "solid",
-  "editor.acceptSuggestionOnEnter": "smart",
   "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.cursorStyle": "line",
+  "editor.cursorBlinking": "smooth",
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.renderLineHighlight": "gutter", 
+  "editor.renderWhitespace": "boundary", 
   "editor.letterSpacing": 0.4,
-  "editor.lineHeight": 1.7,
+  "editor.lineHeight": 1.6,
   "editor.suggestSelection": "first",
-  "editor.parameterHints.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
   "editor.mouseWheelZoom": true,
-  "editor.renderLineHighlight": "gutter",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.accessibilitySupport": "off",
   "editor.semanticHighlighting.enabled": false,
-  "editor.fontFamily": "FiraCode Nerd Font",
-  "editor.fontLigatures": true,
   "editor.tabCompletion": "on",
-  "editor.tabSize": 2,
-  "editor.find.addExtraSpaceOnTop": false,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": "active",
   "editor.minimap.enabled": false,
-  "editor.wordWrapColumn": 100,
-  "editor.quickSuggestions": {"strings": true},
+  "editor.wordWrap": "on",
   "editor.codeActionsOnSave": {
     "source.fixAll": false,
     "source.fixAll.eslint": true,
@@ -34,32 +36,24 @@
   ],
 
   // WORKBENCH 
-  "workbench.colorTheme": "Evondev Dracula Darker Contrast",
   "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "Evondev Dracula Darker Contrast",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.list.smoothScrolling": true,
   "workbench.tree.expandMode": "singleClick",
   "workbench.editor.labelFormat": "short",
-  "workbench.tree.indent": 10,
-  "window.zoomLevel": -1,
+  "workbench.tree.indent": 20,
   "window.autoDetectColorScheme": true,
-  "colorize.enable_search_variables": false,
-  "screencastMode.onlyKeyboardShortcuts": true,
-  "explorer.confirmDelete": false,
-  "explorer.compactFolders": false,
-  "git.enableSmartCommit": true,
-  "explorer.confirmDragAndDrop": false,
-  "breadcrumbs.enabled": true,
   
   // JAVA/TYPE support
   "emmet.syntaxProfiles": { "javascript": "jsx" },
   "javascript.preferences.quoteStyle": "single",
-  "typescript.preferences.quoteStyle": "single",
   "javascript.suggest.autoImports": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "never",
   "typescript.tsserver.log": "off",
+  "typescript.preferences.quoteStyle": "single",
   "typescript.suggest.autoImports": true,
   "typescript.updateImportsOnFileMove.enabled": "never",
   
@@ -76,8 +70,6 @@
   },
 
   // EXTENSIONS
-  "emmet.showSuggestionsAsSnippets": true,
-  "emmet.triggerExpansionOnTab": false,
   "extensions.ignoreRecommendations": true,
   "tabnine.experimentalAutoImports": true,
   "git.autofetch": true,
@@ -94,6 +86,16 @@
   "cSpell.language": "en,pt,pt_BR",
   "tailwindCSS.includeLanguages": {
     "plaintext": "javascript"
+  },
+
+  // Emmet
+  "emmet.useInlineCompletions": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "javascriptreact": "javascriptreact",
+    "typescriptreact": "typescriptreact",
+    "mardkown": "html"
   },
 
   // COLORIZE
@@ -127,6 +129,13 @@
     "RGB",
     "HSL"
   ],
+  "colorize.enable_search_variables": false,
+  "screencastMode.onlyKeyboardShortcuts": true,
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  "git.enableSmartCommit": true,
+  "explorer.confirmDragAndDrop": false,
+  "breadcrumbs.enabled": true,
 
   // ASSOCIATED FILE
   "files.associations": {
@@ -138,6 +147,7 @@
     "*.css": "tailwindcss"
   },
   "cSpell.userWords": [
+    "Bdev",
     "chakra",
     "clsx",
     "Dotenv",
@@ -145,6 +155,7 @@
     "fastify",
     "Fastify",
     "feedbackwidget",
+    "heroicons",
     "Hono",
     "IUGU",
     "jupiter",
@@ -154,11 +165,16 @@
     "nestjs",
     "Omni",
     "Onboarded",
+    "openai",
+    "pageinfo",
     "pallas",
     "prefetch",
+    "relativehumidity",
     "rocketseat",
     "rotion",
+    "Signup",
     "tailwindcss",
+    "testid",
     "trpc",
     "TRPC",
     "unfollow",
@@ -166,7 +182,12 @@
     "unform",
     "Unform",
     "unmark",
-    "upsert"
+    "upsert",
+    "usecases",
+    "vsintellicode",
+    "weathercode",
+    "winddirection",
+    "windspeed"
   ],
   "[prisma]" : {
     "editor.formatOnSave" : true,
@@ -177,12 +198,6 @@
     "*.webpack.js": "webpack",
     "*.proto": "3d",
     "ormconfig.json": "database"
-  },
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "typescript": "typescriptreact",
-    "javascriptreact": "javascriptreact",
-    "typescriptreact": "typescriptreact",
   },
   "material-icon-theme.folders.associations": {
     "adapters": "contract",
@@ -260,10 +275,4 @@
     "cSpell",
     "eslint"
   ],
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "[typescrip]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
 }

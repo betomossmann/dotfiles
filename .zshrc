@@ -1,5 +1,4 @@
 # Fix Interop Error that randomly occurs in vscode terminal when using WSL2
-# Corrige o erro de interrupção que ocorre aleatoriamente no terminal vscode ao usar o WSL2
 fix_wsl2_interop() {
     for i in $(pstree -np -s $$ | grep -o -E '[0-9]+'); do
         if [[ -e "/run/WSL/${i}_interop" ]]; then
@@ -20,8 +19,8 @@ function colormap() {
 # find out which distribution we are running
 _distro=$(awk '/^ID=/' /etc/*-release | awk -F'=' '{ print tolower($2) }')
 
-# set an icon based on the distro (fonts compatible with https://github.com/lukas-w/font-logos)
-# definir um ícone com base na distribuição
+# set an icon based on the distro
+# make sure your font is compatible with https://github.com/lukas-w/font-logos
 case $_distro in
     *arch*)                  ICON="";;
     *debian*)                ICON="";;
@@ -43,7 +42,7 @@ case $_distro in
     *devuan*)                ICON="";;
     *manjaro*)               ICON="";;
     *rhel*)                  ICON="";;
-    *macos*)                 ICON="";;
+    *macos*)                 ICON="";;
     *)                       ICON="";;
 esac
 
@@ -59,21 +58,28 @@ alias Arm='sudo apt autoremove'
 alias Arp='sudo apt remove --purge'
 alias As='apt search'
 alias rrf="rm -rf"
-alias gc="git c"
-alias c="clear"
-
 alias ls="exa --icons --group-directories-first"
 alias ll="exa --icons --group-directories-first -l"
-
 alias dev="cd /home/beto/Development"
 
 # plugins
-plugins=(zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
-# Keep 1000 lines of history
-HISTFILE=~/.zsh_history
-HISTSIZE=1200
-SAVEHIST=1000
+# Keep 10000 lines of history
+if [ -z $HISTFILE ]; then
+    HISTFILE=$HOME/.zsh_history
+fi
+HISTSIZE=10000
+SAVEHIST=10000
+
+setopt append_history
+setopt extended_history
+setopt hist_expire_dups_first
+setopt hist_ignore_dups # ignore duplication command history list
+setopt hist_ignore_space
+setopt hist_verify
+setopt inc_append_history
+setopt share_history # share command history data
 
 source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/zsh-autosuggestions/zsh-autosuggestions.zsh

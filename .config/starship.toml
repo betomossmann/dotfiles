@@ -22,7 +22,7 @@ disabled = false
 
 # Shows the current username
 [env_var.USER]
-format = '[$env_value]($style) '
+format = '[$env_value]($style italic) '
 variable = "USER"
 disabled = false
 
@@ -60,7 +60,7 @@ style = "bold green"
 [git_status]
 format = '[\($all_status$ahead_behind\)]($style) '
 style = "bold green"
-conflicted = "🏳"
+conflicted = " "
 up_to_date = " "
 untracked = " "
 ahead = "⇡${count}"
@@ -71,30 +71,3 @@ modified = " "
 staged = '[++\($count\)](green)'
 renamed = " "
 deleted = " "
-
-# ---
-
-# Disable some modules that aren't needed anymore
-[username]
-disabled = true
-
-[vagrant]
-disabled = true
-
-[docker_context]
-disabled = true
-
-[helm]
-disabled = true
-
-[python]
-disabled = true
-
-[nodejs]
-disabled = true
-
-[ruby]
-disabled = true
-
-[terraform]
-disabled = true
