@@ -49,6 +49,8 @@ esac
 export STARSHIP_DISTRO="$ICON "
 export STARSHIP_DEVICE="$DEVICE "
 
+# SHORTCUTS
+
 # ALIAS COMMANDS
 alias Ac='sudo apt autoclean'
 alias Ag='sudo apt install'
@@ -60,7 +62,40 @@ alias As='apt search'
 alias rrf="rm -rf"
 alias ls="exa --icons --group-directories-first"
 alias ll="exa --icons --group-directories-first -l"
-alias dev="cd /home/beto/Development"
+alias work="cd /home/beto/Development"
+
+# npm aliases
+alias ni='npm install'
+alias nid='npm install --save-dev'
+alias nig='npm install -g'
+alias nu='npm update'
+alias nug='npm update -g'
+alias np='npm prune'
+alias nrm='npm rm'
+alias ns='npm search'
+
+# npm scripts aliases
+alias start='npm start'
+alias dev='npm run dev'
+alias check='npm run check'
+alias watch='npm run watch'
+alias build='npm run build'
+alias deploy='npm run deploy'
+alias publish='npm run publish'
+alias format='npm run format'
+alias typecheck='npm run typecheck'
+alias validate='npm run validate'
+alias lint='npm run lint'
+alias slint='npm run lint:styles'
+
+# tests aliases
+alias t='npm test'
+alias tc='npm run test:coverage'
+alias tw='npm run test:watch'
+
+alias coverage='xdg-open coverage/lcov-report/index.html'
+alias reinstall='rm -rf node_modules package-lock.json && npm i'
+alias reload='source ~/.zshrc'
 
 # plugins
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)

@@ -1,29 +1,22 @@
 {
-  // VSCODE
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-
   // EDITOR
-  "editor.fontSize": 14,
+  "window.zoomLevel": -1,
+  "editor.fontSize": 15,
   "editor.tabSize": 2,
-  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontLigatures": true,
   "editor.cursorStyle": "line",
-  "editor.cursorBlinking": "smooth",
   "editor.acceptSuggestionOnEnter": "smart",
-  "editor.renderLineHighlight": "gutter", 
-  "editor.renderWhitespace": "boundary", 
-  "editor.letterSpacing": 0.4,
-  "editor.lineHeight": 1.6,
   "editor.suggestSelection": "first",
+  "editor.renderLineHighlight": "gutter", 
+  "editor.renderWhitespace": "boundary",
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
-  "editor.mouseWheelZoom": true,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.accessibilitySupport": "off",
   "editor.semanticHighlighting.enabled": false,
   "editor.tabCompletion": "on",
   "editor.minimap.enabled": false,
-  "editor.wordWrap": "on",
   "editor.codeActionsOnSave": {
     "source.fixAll": false,
     "source.fixAll.eslint": true,
@@ -31,8 +24,7 @@
   },
   "editor.rulers": [
     90,
-    110,
-    130
+    120
   ],
 
   // WORKBENCH 
@@ -44,11 +36,10 @@
   "workbench.list.smoothScrolling": true,
   "workbench.tree.expandMode": "singleClick",
   "workbench.editor.labelFormat": "short",
-  "workbench.tree.indent": 20,
+  "workbench.tree.indent": 10,
   "window.autoDetectColorScheme": true,
   
   // JAVA/TYPE support
-  "emmet.syntaxProfiles": { "javascript": "jsx" },
   "javascript.preferences.quoteStyle": "single",
   "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "never",
@@ -77,25 +68,32 @@
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
   "gitlens.codeLens.recentChange.enabled": false,
-  "polacode.transparentBackground": true,
-  "polacode.target": "snippet",
   "material-icon-theme.languages.associations": {"dotenv": "tune"},
   "material-icon-theme.activeIconPack": "nest",
+  "material-icon-theme.folders.color": "#6272a4",
   "liveshare.featureSet": "insiders",
   "cSpell.enabled": true,
   "cSpell.language": "en,pt,pt_BR",
+  "tailwindCSS.validate": true,
+  "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.includeLanguages": {
     "plaintext": "javascript"
   },
-
+  
   // Emmet
   "emmet.useInlineCompletions": true,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.syntaxProfiles": { 
+    "javascript": "jsx",
+    "postcss": "css"
+  },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "typescript": "typescriptreact",
     "javascriptreact": "javascriptreact",
     "typescriptreact": "typescriptreact",
-    "mardkown": "html"
+    "mardkown": "html",
+    "postcss": "css"
   },
 
   // COLORIZE
@@ -148,42 +146,64 @@
   },
   "cSpell.userWords": [
     "Bdev",
+    "boilerplates",
+    "Bootcamp",
     "chakra",
     "clsx",
+    "Coverals",
     "Dotenv",
+    "esnext",
+    "Evondev",
     "extralight",
+    "facebook",
     "fastify",
     "Fastify",
     "feedbackwidget",
+    "frontends",
     "heroicons",
     "Hono",
     "IUGU",
+    "jetbrains",
     "jupiter",
+    "Kanban",
+    "Linkedin",
+    "Liskov",
     "middlewares",
+    "minhavariavel",
     "mixpanel",
     "monaco",
+    "Mossmann",
     "nestjs",
     "Omni",
     "Onboarded",
     "openai",
     "pageinfo",
     "pallas",
+    "postgres",
     "prefetch",
     "relativehumidity",
+    "Roboto",
     "rocketseat",
     "rotion",
     "Signup",
+    "subcabeçalhos",
+    "subheaders",
     "tailwindcss",
     "testid",
     "trpc",
     "TRPC",
+    "typeorm",
+    "Typeorm",
     "unfollow",
     "Unfollow",
     "unform",
     "Unform",
+    "UNISINOS",
     "unmark",
     "upsert",
     "usecases",
+    "usuarios",
+    "Variavel",
     "vsintellicode",
     "weathercode",
     "winddirection",
@@ -264,9 +284,6 @@
     "typescriptreact",
     "vue"
   ],
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
   "errorLens.enabledDiagnosticLevels": [
     "warning",
     "error"

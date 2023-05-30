@@ -27,19 +27,19 @@ variable = "USER"
 disabled = false
 
 # Shows an icon depending on what device it is running on
-[env_var.STARSHIP_DEVICE]
-format = 'on [$env_value](bold yellow)'
-variable = "STARSHIP_DEVICE"
-disabled = false
+# [env_var.STARSHIP_DEVICE]
+# format = 'on [$env_value](bold yellow)'
+# variable = "STARSHIP_DEVICE"
+# disabled = false
 
 # ---
 
 # Shows the hostname
-[hostname]
-ssh_only = false
-format = "[$hostname](bold yellow) "
-trim_at = "."
-disabled = false
+# [hostname]
+# ssh_only = false
+# format = "[$hostname](bold yellow) "
+# trim_at = "."
+# disabled = false
 
 [directory]
 truncation_length = 1
@@ -53,14 +53,14 @@ style = "bold italic blue"
 [git_branch]
 symbol = " "
 format = "on [$symbol$branch]($style) "
-# truncation_length = 4
+truncation_length = 3
 truncation_symbol = "…/"
 style = "bold green"
 
 [git_status]
 format = '[\($all_status$ahead_behind\)]($style) '
 style = "bold green"
-conflicted = " "
+conflicted = ""
 up_to_date = " "
 untracked = " "
 ahead = "⇡${count}"
@@ -71,3 +71,5 @@ modified = " "
 staged = '[++\($count\)](green)'
 renamed = " "
 deleted = " "
+
+# ---
