@@ -63,8 +63,11 @@ alias rrf="rm -rf"
 alias ls="exa --icons --group-directories-first"
 alias ll="exa --icons --group-directories-first -l"
 alias work="cd /home/beto/Development"
+alias drun="sudo service docker start"
+alias sdoc="sudo service docker stop"
 
-# npm aliases
+
+# NPM ALIASES
 alias ni='npm install'
 alias nid='npm install --save-dev'
 alias nig='npm install -g'
@@ -74,7 +77,7 @@ alias np='npm prune'
 alias nrm='npm rm'
 alias ns='npm search'
 
-# npm scripts aliases
+# NPM SCRIPTS ALIASES
 alias start='npm start'
 alias dev='npm run dev'
 alias check='npm run check'
@@ -88,7 +91,7 @@ alias validate='npm run validate'
 alias lint='npm run lint'
 alias slint='npm run lint:styles'
 
-# tests aliases
+# TESTS ALIASES
 alias t='npm test'
 alias tc='npm run test:coverage'
 alias tw='npm run test:watch'

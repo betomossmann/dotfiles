@@ -25,21 +25,14 @@
 	untracked = red
 [alias]
   f = fetch -p
-  r = rebase
-  ri = rebase -i
 	b = branch
 	co = checkout
 	cb = checkout -b
 	c = !git add --all && git commit -m
 	s = !git status -sb
-	count = !git shortlog -s --grep
-  amend = !git add --all && git commit --amend --no-edit
     # log: #e3c78a (yellow), #ff5454 (red), #36c692 (green), #80a0ff (blue)
 	l = !git log --pretty=format:'%C(blue)%h%C(yellow)%d %C(white)%s - %C(cyan)[ %cn ], %C(green)%cr'
-  lla = "log --graph --date=human --format='%C(#e3c78a)%h%C(#ff5454)%d%C(reset) - %C(#36c692)(%ad)%C(reset) %s %C(#80a0ff){%an}%C(reset)'"
-  ll  = lla --first-parent
-  llm = !git ll main..HEAD
-  llu = !git ll @{upstream}..HEAD
-  lld = !git ll HEAD..@{upstream}
+	count = !git shortlog -s --grep
+  amend = !git add --all && git commit --amend --no-edit
 [init]
 	defaultBranch = main

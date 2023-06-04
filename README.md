@@ -1,5 +1,7 @@
 # Welcome to this DOTFILES REPO
 
+[![alt text](./.config/W-terminal.png "Terminal")]()
+
 Repository of my personal settings, working on OS: Windows(WSL) Linux and macOS. Here you'll find configuration files that can help optimize and customize your development experience.
 
 <br>
